@@ -199,16 +199,16 @@ $(".card .list-group").sortable({
     $(".bottom-trash").removeClass("bottom-trash-drag");
   },
   over: function(event) {
-    $("event.target").addClass("dropover-active");
+    $(event.target).addClass("dropover-active");
   },
   out: function(event) {
-    $("event.target").removeClass("dropover-active");
+    $(event.target).removeClass("dropover-active");
   },
 
   update: function(event) {
     var tempArr =[];
 
-    $(this).children().each(function(){
+    $(this).children().each(function() {
       var text = $(this)
       .find("p")
       .text()
